@@ -1,17 +1,26 @@
 package vn.co.your.dotiensi.Springboottutorial.springboot.models;
 
+import jakarta.persistence.*;
+
+@Entity
 public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String name;
+
     private int year;
+
+
     private Double price;
+
     private String url;
 
     public Product() {
     }
 
-    public Product(Long id, String name, int year, Double price, String url) {
-        this.id = id;
+    public Product( String name, int year, Double price, String url) {
         this.name = name;
         this.year = year;
         this.price = price;
