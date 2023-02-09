@@ -1,13 +1,13 @@
-package vn.co.your.dotiensi.Springboottutorial.springboot;
+package com.example.first;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootApplication {
+public class FirstApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootApplication.class, args);
+		SpringApplication.run(FirstApplication.class, args);
 	}
 
 }

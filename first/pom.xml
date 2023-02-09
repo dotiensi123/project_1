@@ -8,11 +8,11 @@
 		<version>3.0.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>vn.co.your.dotiensi.Springboot-tutorial</groupId>
-	<artifactId>springboot</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>first</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot</name>
-	<description>Demo project for Spring Boot</description>
+	<name>first</name>
+	<description>first project with spring boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

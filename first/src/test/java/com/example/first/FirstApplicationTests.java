@@ -1,10 +1,10 @@
-package vn.co.your.dotiensi.Springboottutorial.springboot;
+package com.example.first;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootApplicationTests {
+class FirstApplicationTests {
 
 	@Test
 	void contextLoads() {
