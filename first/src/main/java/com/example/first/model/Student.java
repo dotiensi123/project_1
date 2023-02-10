@@ -1,25 +1,27 @@
-package com.example.first.student;
+package com.example.first.model;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "student")
 public class Student {
     @Id
     @GeneratedValue(generator = "student_sequence", strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "student_sequence", sequenceName = "student_id_seq", allocationSize = 1)
     private Long id;
-    @Column
-    private String name;
-    @Column
-    private double grade;
 
-    public Student() {
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "email")
+    private String email;
+
+    public Student(String name, String email) {
+        this.name = name;
+        this.email = email;
     }
 
-    public Student( String name, double grade) {
-        this.name = name;
-        this.grade = grade;
+    public Student() {
     }
 
     public Long getId() {
@@ -38,12 +40,12 @@ public class Student {
         this.name = name;
     }
 
-    public double getGrade() {
-        return grade;
+    public String getEmail() {
+        return email;
     }
 
-    public void setGrade(double grade) {
-        this.grade = grade;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
@@ -51,7 +53,7 @@ public class Student {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", grade=" + grade +
+                ", email='" + email + '\'' +
                 '}';
     }
 }
