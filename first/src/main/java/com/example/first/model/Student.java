@@ -21,9 +21,10 @@ public class Student {
 
     @Column
     private String address;
-    public Student(String name, String email) {
+    public Student(String name, String email,String address) {
         this.name = name;
         this.email = email;
+        this.address = address;
     }
 
     public Student() {

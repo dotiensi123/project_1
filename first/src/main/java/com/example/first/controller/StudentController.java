@@ -22,14 +22,11 @@ public class StudentController {
 
     @GetMapping("/all")
     public List<Student> getAll(){
+
         return studentService.getAllStudent();
     }
 
-//    @GetMapping("/{id}")
-//    public Optional<Student> getStudentById(@PathVariable("id") Long id){
-//        return studentService.getStudentById(id);
-//    }
-    @PostMapping("/student")
+    @PostMapping("")
     public void createStudent(@RequestBody Student student){
         studentService.createStudent(student);
     }
